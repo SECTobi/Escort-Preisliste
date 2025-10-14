@@ -63,16 +63,13 @@ body {
     margin: 0 24px 0 24px;
     padding: 0;
     max-width: None;
-    /* START GEÄNDERT: Hintergrundbild einfügen */
-    background-image: url('uploaded:image_29733f.jpg-65cff0ba-b357-415e-935f-f0697f0baf3b');
+    /* *** HINTERGRUNDPFAD KORRIGIERT *** */
+    background-image: url('assets/images/image_29733f.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #1e3c72; /* Fallback-Farbe */
-    /* END GEÄNDERT */
     }
-/* START GEÄNDERT: Alte Hintergrund-CSS (body::before/after) entfernt */
-/* END GEÄNDERT */
 .header {
     background: rgba(255, 255, 255, 0.98);
     padding: 50px 40px;
@@ -102,7 +99,6 @@ body {
     animation: logoGlow 3s ease-in-out infinite;
     overflow: hidden;
     }
-/* START GEÄNDERT: Alte logo svg CSS entfernt */
 @keyframes logoGlow {
     0%, 100% {
         box-shadow: 0 10px 25px rgba(42, 82, 152, 0.4);
@@ -704,7 +700,7 @@ body {
 <header class="header">
 <div class="logo-section">
 <div class="logo">
-<img src="uploaded:image_1c53e3.png-380f4565-0f39-43e3-941b-3669b71d78dd" alt="Firmenlogo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"/>
+<img src="assets/images/image_1c53e3.png" alt="Firmenlogo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"/>
 </div>
 <div>
 <h1 class="main-title">Escort Service Preisrechner</h1>
@@ -1131,7 +1127,8 @@ body {
                     // Ignoriere unvollständige Zeilen, zeige aber Warnung
                     if (countryValue || !isNaN(hours)) {
                         alert('Bitte füllen Sie alle Land- und Stundenfelder korrekt aus.');
-                        throw new Error('Form incomplete');
+                        // Throwing an error here stops the outer forEach loop
+                        return; // Use return instead of throwing to allow other rows to process if needed
                     }
                     return;
                 }
