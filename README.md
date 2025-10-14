@@ -54,7 +54,12 @@ h5 {
     }
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #1e3c72 100%);
+    /* GEÄNDERT: Hintergrundbild aus den hochgeladenen Dateien */
+    background-image: url('uploaded:image_29733f.jpg-65cff0ba-b357-415e-935f-f0697f0baf3b');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #1e3c72; /* Fallback-Farbe */
     min-height: 100vh;
     color: #333;
     line-height: 1.6;
@@ -91,7 +96,7 @@ body {
     font-size: 2em;
     font-weight: bold;
     box-shadow: 0 8px 20px rgba(42, 82, 152, 0.3);
-    overflow: hidden; /* Wichtig, um das Bild innerhalb des Kreises zu beschneiden */
+    overflow: hidden; 
     }
 .company-name {
     font-size: 2.5em;
@@ -450,7 +455,7 @@ body {
 
             ul,
             ol {
-                font-size: 1em; /* Equivalent to 17.6px if base is 16px */
+                font-size: 1em; 
                 font-weight: 400;
                 margin-bottom: 1.2em;
                 line-height: 1.8;
@@ -458,7 +463,7 @@ body {
 
             p {
                 font-size: 1em;
-                line-height: 1.8; /* Equivalent to 17.6px if base is 16px */
+                line-height: 1.8; 
                 font-weight: 400;
                 margin-top: 0.8em;
                 margin-bottom: 0.8em;
@@ -474,7 +479,7 @@ body {
 
         figcaption {
             margin-top: 0.5em;
-            font-size: 0.8em; /* Equivalent to 17.6px if base is 16px */
+            font-size: 0.8em; 
             font-weight: 400;
             text-align: center;
             font-style: normal;
@@ -496,7 +501,7 @@ body {
 <div class="header">
 <div class="logo-section">
 <div class="logo">
-    <img src="pfad/zu/ihrem/neuen_logo.png" alt="SECompanion Logo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;"/>
+    <img src="uploaded:image_1c53e3.png-380f4565-0f39-43e3-941b-3669b71d78dd" alt="SECompanion Logo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;"/>
 </div>
 <div>
 <h1 class="company-name">SECompanion GmbH</h1>
