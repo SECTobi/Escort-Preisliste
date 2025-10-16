@@ -782,8 +782,7 @@ body {
 </div>
 <div class="price-range">135,00 - 160,00 € (1. Guard) + 70,00 - 90,00 € (2. Guard)</div>
 </div>
-</div>
-</section>
+</div><img src="assets/images/image_e41d5c.jpg" alt="Beschreibung des neuen Bildes" style="max-width: 100%; height: auto; border-radius: 8px;"/>
 <form id="priceCalculator">
 <section class="guards-selection">
 <h3 style="color: #1e3c72; font-size: 1.5em; margin-bottom: 15px;">
